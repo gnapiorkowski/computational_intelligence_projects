@@ -1,0 +1,70 @@
+PS C:\Users\Centeepede\Desktop\deep learning\deep learning> cd 'c:\Users\Centeepede\Desktop\deep learning\deep learning'; ${env:PYTHONIOENCODING}='UTF-8'; ${env:PYTHONUNBUFFERED}='1'; & 'C:\Users\Centeepede\AppData\Local\Programs\Python\Python37\python.exe' 'c:\Users\Centeepede\.vscode\extensions\ms-python.python-2019.11.50794\pythonFiles\ptvsd_launcher.py' '--default' '--client' '--host' 'localhost' '--port' '61971' 'c:\Users\Centeepede\Desktop\deep learning\deep learning\zad2.py' 
+Using TensorFlow backend.
+Training sample size:  19894 
+Test sample size:  5106
+Loading Images...
+Images Loaded Successfully!
+channels_last
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv2d_1 (Conv2D)            (None, 38, 51, 32)        896
+_________________________________________________________________
+activation_1 (Activation)    (None, 38, 51, 32)        0
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 19, 25, 32)        0
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 17, 23, 32)        9248
+_________________________________________________________________
+activation_2 (Activation)    (None, 17, 23, 32)        0
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 8, 11, 32)         0
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 6, 9, 64)          18496
+_________________________________________________________________
+activation_3 (Activation)    (None, 6, 9, 64)          0
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 3, 4, 64)          0
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 768)               0
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                49216     
+_________________________________________________________________
+activation_4 (Activation)    (None, 64)                0
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 64)                0
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 65
+_________________________________________________________________
+activation_5 (Activation)    (None, 1)                 0
+=================================================================
+Total params: 77,921
+Trainable params: 77,921
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+994/994 [==============================] - 63s 64ms/step - loss: 0.6563 - accuracy: 0.6065 - val_loss: 0.5548 - val_accuracy: 0.6905
+Epoch 2/10
+994/994 [==============================] - 62s 62ms/step - loss: 0.5990 - accuracy: 0.6871 - val_loss: 0.7422 - val_accuracy: 0.7070
+Epoch 3/10
+994/994 [==============================] - 65s 65ms/step - loss: 0.5637 - accuracy: 0.7138 - val_loss: 0.6238 - val_accuracy: 0.7250
+Epoch 4/10
+994/994 [==============================] - 65s 66ms/step - loss: 0.5490 - accuracy: 0.7324 - val_loss: 0.6579 - val_accuracy: 0.7300
+Epoch 5/10
+994/994 [==============================] - 64s 64ms/step - loss: 0.5273 - accuracy: 0.7423 - val_loss: 0.3643 - val_accuracy: 0.7547
+Epoch 6/10
+994/994 [==============================] - 63s 63ms/step - loss: 0.5213 - accuracy: 0.7464 - val_loss: 0.4426 - val_accuracy: 0.7618
+Epoch 7/10
+994/994 [==============================] - 64s 64ms/step - loss: 0.5235 - accuracy: 0.7549 - val_loss: 0.3220 - val_accuracy: 0.7598
+Epoch 8/10
+994/994 [==============================] - 71s 71ms/step - loss: 0.5150 - accuracy: 0.7558 - val_loss: 0.4905 - val_accuracy: 0.7785
+Epoch 9/10
+994/994 [==============================] - 64s 65ms/step - loss: 0.5069 - accuracy: 0.7628 - val_loss: 0.7228 - val_accuracy: 0.7658
+Epoch 10/10
+994/994 [==============================] - 64s 64ms/step - loss: 0.5020 - accuracy: 0.7711 - val_loss: 0.5164 - val_accuracy: 0.7565
+Loading Images...
+Images Loaded Successfully!
+320/320 [==============================] - 9s 29ms/step
+Finito :D
+PS C:\Users\Centeepede\Desktop\deep learning\deep learning> 
